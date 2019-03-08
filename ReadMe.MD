@@ -14,4 +14,6 @@ This app is hosted on Heroku, click the link here to view the app:
 * Enter any Interger Number
 * You can see the last (Nth) number of the Fibonacci series and the amount of time consumed for its execution.
 
-## Local Host Execution Steps
+## Steps for Local Hosting
+    1. Clone the repository:
+        git clone 
