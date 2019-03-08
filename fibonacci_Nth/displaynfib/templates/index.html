@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fibonacci Number Display</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="{% static 'bs/css/flatly.min.css' %}" />
     <link rel="stylesheet" href="{% static 'style.css' %}" />
 </head>
@@ -16,20 +15,20 @@
         <div class="row">
             <div class="col-lg-4 col-lg-offset-4" id="content">
                 <h1>Django Fibonacci App</h1>
-                <form action="#" method="POST" role="form">
-                        {% csrf_token %}
+                <form action="#" method="GET" role="form">
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter an Integer Number">
+                            <input type="search" class="form-control" placeholder="Enter an Integer Number" name="number">
                           <span class="input-group-btn">
                               <button type="submit" class="btn btn-default" id="add-btn">Enter</button>
-                          </span>
-                          
+                          </span>        
                         </div>
                         <br>
                     </div>
                 </form>
-                <pre><h4><b>Nth Fibonacci Number:</h4><h5>                   Time Consumed:{{time_taken}} sec</h5></b></pre>
+                <div>
+                <pre><h4><b>Nth Fibonacci Number: {{result}}</h4><h5>                     Time Consumed:</b>   {{time_taken}} sec</h5></pre>
+                </div>
             </div>
         </div>
     </div>    

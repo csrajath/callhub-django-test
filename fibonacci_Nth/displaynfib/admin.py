@@ -1,3 +1,3 @@
 from django.contrib import admin
-
-# Register your models here.
+'''from .models import FibOutput # including the app in the admin panel
+admin.site.register(FibOutput)'''
