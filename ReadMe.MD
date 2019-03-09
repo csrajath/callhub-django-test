@@ -14,6 +14,14 @@ This app is hosted on Heroku, click the link here to view the app: https://fibon
 * Enter any Interger Number
 * You can see the last (Nth) number of the Fibonacci series and the amount of time consumed for its execution.
 
-## Steps for Local Hosting
-    1. Clone the repository:
+## Steps for Local Hosting (Linux OS)
+    1. Download/Clone this repository to any directory on yout computer:
         git clone https://github.com/jarviscrypter/callhub-django-test.git
+    2. Open terminal and move into the downloaded repository:
+        cd callhub-django-test
+    3. Install Django in the directory (ensure 'pip or pip3' is installed):
+        pip install django or pip3 install django
+    4. Run the application:
+        python3 manage.py runserver
+    5. Copy the IP with port number and open it in a browser window:
+        http://127.0.0.1:8000/
