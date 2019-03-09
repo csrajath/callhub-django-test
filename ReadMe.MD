@@ -16,4 +16,4 @@ This app is hosted on Heroku, click the link here to view the app:
 
 ## Steps for Local Hosting
     1. Clone the repository:
-        git clone 
+        git clone https://github.com/jarviscrypter/callhub-django-test.git
