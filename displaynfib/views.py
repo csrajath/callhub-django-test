@@ -6,11 +6,11 @@ from displaynfib.models import FibOutput
 
 def calculatefibonacci(num):                           #fibonacci logic
     if num < 2:
-        return 1
+        return 1                                        # if input value is less than 2, 1 is the result
     else:
-        n1 = 1
+        n1 = 1                                          #initializing first and second position values to 1
         n2 = 1
-        for i in range(2, num):
+        for i in range(2, num):                         #looping through the numbers from 2nd number to nth
             t = n1 + n2
             n1 = n2
             n2 = t
@@ -27,18 +27,9 @@ def return_n_fib(request):                          #function returing the html 
         num = int(number)
         result = calculatefibonacci(num)
         end = time.time() - start
-        time_taken = str(end)[0:5]
+        time_taken = str(end)[0:5]                  #calculating the time consumed for execution
 
-        obj = FibOutput.objects.create(
-            number=num, result=result, time_taken=time_taken)
-        obj.save()
+        pt = FibOutput.objects.create(number=num, result=result, time_taken=time_taken)
+        pt.save()
 
-    return render(
-        request,
-        'index.html',
-        {
-            'number': num,
-            'result': result,
-            'time_taken': time_taken
-        }
-    )
+    return render(request, 'index.html',{'number': num, 'result': result, 'time_taken': time_taken})
