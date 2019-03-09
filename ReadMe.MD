@@ -1,5 +1,3 @@
-This is a task by callhub.io as part of the Interview Proces
-
 # Problem Statement
 
 Develop a Python/Django application that will display the Nth number in Fibonacci sequence. 
